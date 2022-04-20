@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  koa-hello-world:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    ports:
+      - ${EXTERNAL_APP_PORT}:${APP_PORT}
