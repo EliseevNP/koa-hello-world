@@ -4,7 +4,7 @@ const Router = require('koa-router');
 const router = new Router();
 
 router.get('/health', (ctx) => { ctx.body = { status: 'OK' } });
-router.get('/', (ctx) => { ctx.body = { data: 'hello world' } });
+router.get('/', (ctx) => { ctx.body = { data: 'v1' } });
 
 const app = new Koa();
 
